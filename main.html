@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <link href="styles.css" rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<script>
+    function myFunction() {
+        let x = document.getElementById("navigation");
+        if (x.style.display == "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block"
+        }
+    }
+</script>
+
+<body>
+    <a href="javascript:void(0);" class="burger" onclick="myFunction()">
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" rx="1" fill="#333333"/>
+            <rect y="5" width="16" height="2" rx="1" fill="#333333"/>
+            <rect y="10" width="16" height="2" rx="1" fill="#333333"/>
+            </svg>
+    </a>
+
+
+
+    <nav>
+        <div class="navigation" id="navigation">
+            <a class="nav_a">Ihor Dudnyk</a>
+            <div class="itemsList">
+                <a class="nav_a">Cases</a>
+                <a class="nav_a">Work</a>
+                <a class="nav_a">Contacts</a>
+            </div>
+        </div>
+    </nav>
+    <div class="mainBlock">
+        <div class="content">
+            <div class="text_block">
+                <p>Helo there! My name is Ihor.</p>
+
+                <p>I am a product designer from Kyiv, Ukraine 🇺🇦. Currently I am creating and improving the ecosystem of b2b products at Selerant. </p>
+
+                <p>I create beautiful interface that delights users, onboards, converts them to paying customers, and retain them for years. I'm know what it take to build a product and sustainable business. I can write effective copy and collaborate with
+                    marketing.
+                </p>
+
+            </div>
+            <div class=" text_block ">
+                <h3>What should you know about me</h3>
+                <ul>
+                    <li>I am rather an optimizer and problem solver than an artist;</li>
+                    <li>appreciating the culture of open and constant feedback;</li>
+                    <li>looking for the cheapest solutions for achieving business objectives;</li>
+                    <li>I can be a mentor, but I would like to learn from others;</li>
+                    <li>I don't lose focus from goals in the long run.</li>
+                </ul>
+            </div>
+            <div class="highlight ">
+                <h3>I dream</h3>
+                <p>of creating valuable products and changing people's daily lives for the better.</p>
+            </div>
+            <div class="links">
+                <a>Mail</a>
+                <a>Telegram</a>
+                <a>LinkedIn</a>
+                <a>Facebook</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
