@@ -309,6 +309,7 @@ img.case {
     .casesGrid {
         grid-template-columns: 1fr;
         grid-template-rows: none;
+        gap: 40px;
     }
     .caseTile {
         max-width: 100%;
