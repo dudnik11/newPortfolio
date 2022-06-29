@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../styles.css" rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<script>
+    function myFunction() {
+        let x = document.getElementById("navigation");
+        let burger = document.getElementById("burger");
+        let cross = document.getElementById("close_burger")
+        if (x.style.display == "block") {
+            x.style.display = "none";
+            burger.style.display = "block";
+            cross.style.display = "none";
+        } else {
+            x.style.display = "block"
+            burger.style.display = "none";
+            cross.style.display = "block";
+        }
+    }
+</script>
+
+<body>
+    <a href="javascript:void(0);" class="burger" id="burger" onclick="myFunction()">
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" rx="1" fill="#333333"/>
+            <rect y="5" width="16" height="2" rx="1" fill="#333333"/>
+            <rect y="10" width="16" height="2" rx="1" fill="#333333"/>
+            </svg>
+    </a>
+    <a href="javascript:void(0);" class="close_burger" id="close_burger" onclick="myFunction()">
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="14.364" y="1.05023" width="16" height="2" rx="1" transform="rotate(135 14.364 1.05023)" fill="#333333"/>
+            <rect x="3.05025" y="-0.363953" width="16" height="2" rx="1" transform="rotate(45 3.05025 -0.363953)" fill="#333333"/>
+            </svg>
+    </a>
+
+    <nav>
+        <div class="navigation" id="navigation">
+            <a class="nav_a">Ігор Дудник</a>
+            <div class="itemsList">
+                <a class="nav_a" style="color: #333333">Кейси</a>
+                <a class="nav_a">Робота</a>
+                <a class="nav_a">Контакти</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mainBlock">
+        <div class="content">
+            <div class="article_block">
+                <h1><mark class="portmone">Portmone:</mark> як зробити редизайн і позбутися легасі одночасно</h1>
+                <div class="text_block">
+                    <h3>Що це таке?</h3>
+                    <p><b class="bold">Portmone —</b> сервіс онлайн-платежів та грошових переказів в Україні. Основні послуги: оплата стільникового зв’язку і комунальних платежів, страхування, сплата податків і перекази з картки на картку.</p>
+                </div>
+                <div class="picture">
+                    <img src="../img/portmone/portmone1.png">
+                    <h5>Так особистий кабінет виглядає зараз</h5>
+                </div>
+                <div class="text_block">
+                    <h3>Задачі</h3>
+                    <ol>
+                        <li>Реорганізація навігації в особистому кабінеті. Зараз немає ніякої документації, елементи часто дублюють один одиного.</li>
+                        <li>Покращити формат подачі інформації в розділах.</li>
+                        <li>Інформування користувачів про 1500+ сервісів, які можна сплатити через Portmone. Люди часто про них не знають.</li>
+                    </ol>
+                </div>
+                <div class="text_block">
+                    <h3>Бізнес-цілі</h3>
+                    <ul>
+                        <li>Зростання бази зареєстрованих користувачів;</li>
+                        <li>зростання за допомогою кросс-продажів сервісів;</li>
+                        <li>знизити Exit Rate особистого кабінету.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="article_block">
+                <h2><mark class="portmone">Як розібратися в хаосі</mark></h2>
+                <div class="text_block">
+                    <h3>Обʼєктно-Орієнтоване Проєктування</h3>
+                    <div>
+                        <p>Для того щоб швидко розібратися в новому продукті, зрозуміти, які обʼєкти в ньому існують та як вони повʼязані один з одним, ми використали <b class="bold">Обʼєктно-Орієнтоване Проєктування.</b> Інтерфейс особитстого кабінету розділили
+                            на обʼєкти з їх властивостями, типами даних, корнер-кейсами і методами.</p>
+                        <p>Виявилось, що багато сутностей в системі дублюються: виконують одні й ті самі дії з одними й тими самими даними. В продукті було близько 20 обʼктів, кількість яких вдалося вкоротити вдічі. </p>
+                    </div>
+                </div>
+                <div class="picture">
+                    <img src="../img/portmone/portmone2.png">
+                </div>
+                <div class="text_block">
+                    <h3>Реорганізація меню</h3>
+                    <p>Почали з навігації. У правому меню були Рахунки і баланси, Баланси в компаніях, Архів рахунків, Шаблони, Автоматична оплата, Інші оплати, Звіти. Всі вони відносяться до одного класу Рахунок, бо виконують одні й ті самі дії з одними
+                        й тими самими даними. Наприклад, Шаблони і автоматична опалата — це той же Рахунок, але дії в ньому частково або повністю виконуює система, а не людина. Архів рахунків — це просто відображення списку Рахунків. Проте все це було
+                        розбито на різні пункти меню з різним відображенням. </p>
+                    <p>По аналогії виділили класи Послуга, Користувач, Платіжний метод і т.д.</p>
+                </div>
+                <div class="picture">
+                    <img src="../img/portmone/portmone3.gif">
+                </div>
+                <p>В результаті вийшло всього 4 пункти меню, які відповідали нашим класам:</p>
+                <div class="picture portmoneDesktopVisible">
+                    <img src="../img/portmone/portmone4.png">
+                </div>
+                <div class="picture pictureMobileVisible">
+                    <img src="../img/portmone/portmone4_1.png">
+                </div>
+            </div>
+
+            <div class="article_block">
+                <h2><mark class="portmone">Рішення</mark></h2>
+                <div class="text_block">
+                    <h3>Концепція</h3>
+                    <p>В основному флоу Portmone людина визначає <b class="bold">кому </b>платити, <b class="bold">звідки</b> платити і <b class="bold">скільки</b> платити. Це мінімально необхідна інформація, тож почати можна саме з неї.</p>
+                    <p>В нашій концепції людина вводить <b class="bold">кому</b>, а система сама визначить що це таке і додасть необхідні поля. Якщо вводить номер — пропонує поповнити його або те, що закріплено за цим номером, а якщо адресу — пропонує спалитит
+                        комуналку або те, що ще є за цією адресою.</p>
+                    <p>Завдяки обʼєктній моделі ми знаємо, що у Portmone є ці дані і це можна використовувати. </p>
+                </div>
+                <div class="picture">
+                    <img src="../img/portmone/portmone5.png">
+                </div>
+                <div class="text_block">
+                    <h3>Від ООП до дизайн-системи</h3>
+                    <p>Обʼєктна модель описує блоки системи, тепер їх треба візуалізувати. Ми зібрали компоненти, враховуючи їх властивості, корнер-кейси, методи та різні стани.</p>
+                    <p>Суть в тому, що в першу чергу ми створюємо те, що будемо перевикористовувати в дизайні і розробці. В кому підході є переваги для багатьох ролей:</p>
+                    <ol>
+                        <li><b class="bold"> Для дизайнера.</b> Не потрібно кожнного разу придумувати нове і малювати це з нуля, можна збирати дизайн з вже існуючих блоків і модифікувати старі.</li>
+                        <li><b class="bold"> Для розробника.</b> Не потрібно кожен раз писати весь код, можна ctrl-c и ctrl-v. Чистіший код і швидша розробка.</li>
+                        <li><b class="bold"> Для користувача.</b> Консистентний дизайн, в якому однакові обʼєкти однаково виглядають і працюють.</li>
+                    </ol>
+                </div>
+                <div class="picture">
+                    <img src="../img/portmone/portmone6.png">
+                </div>
+                <div class="picture">
+                    <img src="../img/portmone/portmone7.png">
+                </div>
+                <div class="picture">
+                    <img src="../img/portmone/portmone8.png">
+                </div>
+                <div class="picture">
+                    <img src="../img/portmone/portmone9.png">
+                </div>
+                <div class="picture">
+                    <img src="../img/portmone/portmone10.png">
+                </div>
+                <div class="pictures_row">
+                    <img class="imgS" src="../img/portmone/portmone11_1.png">
+
+                    <img class="imgS" src="../img/portmone/portmone11_2.png">
+
+                    <img class="imgS" src="../img/portmone/portmone11_3.png">
+
+                    <img class="imgS" src="../img/portmone/portmone11_4.png">
+
+                </div>
+                <div class="text_block">
+                    <h3>Операційне тестування</h3>
+                    <p>Хоч і дизайн робили в фігмі, ми хотіли протестувати максимально наближений до реальності прототип. Для шкивдкості, в Axure поверх зображень зробили справжні інпути та переходи.</p>
+                    <p>Тестували операційним тестуванням: засікали час на виконання задачі, поділивши її на чекпоінти. Таким чином зрозуміли, де люди витрачають найбільше часу. І так декілька ітерацій. </p>
+                    <p>На цьому етапі спростили дизайн ще більше: залишили лише одне поле, а все інше показується потім.</p>
+                    <p><b class="bold">В фінальній версії усе починається з одного питання — що потрібно сплатити?</b></p>
+                </div>
+                <div class="picture">
+                    <img src="../img/portmone/portmone12.png">
+                </div>
+            </div>
+
+            <div class="article_block">
+                <h2><mark class="portmone">Підсумок</mark></h2>
+                <div class="text_block">
+                    <p>Ми виконали 3 задачі:</p>
+                    <ul>
+                        <li>реорганізували навігацію, скоротили кількість пунктів і обʼєднали їх в 4-х розділах;</li>
+                        <li>уніфікували відображення інформації всередині розділів, задали правила для інтерфейсу, створили блоки, які можна перевикористовувати і збирати їх у нові;</li>
+                        <li>полегшили доступ до 1500+ сервісів, які можна оплатити через Portmone.</li>
+                    </ul>
+                    <p>А ще змінили головну сторінку сайту, щоб нові користувачі швидке досягали своїх цілей і реєструвались, а рішення було комплексним та повним.</p>
+                    <p>Тепер користувач досягає кінцевих цілей швидше більш ніж в 2 рази, а в Portmone є мастштабуємий інтерейс, який адаптується і виглядає цілісно на різних пристроях.</p>
+                </div>
+                <div class="text_block">
+                    <h3>Командна робота</h3>
+                    <p>Я приймав участь на всіх етапах, особливу увагу приділив аналізу і дизайн системі. Працював у команді з:</p>
+                    <a>Олеся Каіта</a>
+                    <p><a>Саша Канський.</a></p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

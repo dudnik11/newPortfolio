@@ -31,11 +31,18 @@ body {
     color: #333333;
 }
 
-.mainBlock {
+.mainBlockMainPage {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.mainBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 28px;
 }
 
 .content {
@@ -43,7 +50,34 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
+    gap: 80px;
+}
+
+.article_block {
+    display: flex;
+    flex-direction: column;
     gap: 40px;
+}
+
+h1 {
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    color: #333333;
+    -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: #333333;
 }
 
 h3 {
@@ -55,6 +89,16 @@ h3 {
     line-height: 140%;
     color: #333333;
     -webkit-font-smoothing: antialiased;
+}
+
+h5 {
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    color: #333333;
 }
 
 p,
@@ -74,6 +118,21 @@ a {
 
 a {
     color: #2897E5;
+}
+
+mark.lun {
+    background-color: transparent;
+    color: #F87822;
+}
+
+mark.portmone {
+    background-color: transparent;
+    color: #E83336;
+}
+
+mark.preply {
+    background-color: transparent;
+    color: #44C5CF;
 }
 
 .nav_a {
@@ -100,6 +159,40 @@ a {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.picture {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.pictures_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 700px;
+}
+
+.imgS {
+    max-width: 170px;
+    border-radius: 10px;
+    border: solid;
+    border-color: #E1E1E1;
+    border-width: 1px;
+}
+
+img {
+    max-width: 700px;
+    border-radius: 20px;
+    border: solid;
+    border-color: #E1E1E1;
+    border-width: 1px;
+}
+
+.pictureMobileVisible {
+    display: none;
 }
 
 .burger {
@@ -132,16 +225,32 @@ a {
     body {
         display: flex;
         flex-direction: column;
-        padding: 16px;
+        padding: 0px 32px;
     }
     .mainBlock {
         height: auto;
+        padding: 0px;
+    }
+    .content {
+        margin: 0px;
+    }
+    img {
+        max-width: 100%;
     }
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 0px 16px;
+    }
     .links {
         gap: none;
         justify-content: space-between;
+    }
+    .pictureMobileVisible {
+        display: block;
+    }
+    .portmoneDesktopVisible {
+        display: none;
     }
 }
