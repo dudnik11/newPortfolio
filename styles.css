@@ -3,6 +3,7 @@ body {
     grid-template-columns: 151px 1fr;
     margin: 0px;
     padding: 0px;
+    padding-bottom: 32px;
 }
 
 .navigation {
@@ -50,7 +51,15 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
+}
+
+.content_main {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .article_block {
@@ -78,6 +87,7 @@ h2 {
     font-size: 32px;
     line-height: 100%;
     color: #333333;
+    margin-bottom: 8px;
 }
 
 h3 {
@@ -105,7 +115,8 @@ p,
 ol,
 ul,
 li,
-a {
+a,
+b {
     margin: 0px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -114,6 +125,10 @@ a {
     line-height: 175%;
     color: #333333;
     -webkit-font-smoothing: antialiased;
+}
+
+b {
+    font-weight: 700;
 }
 
 a {
@@ -205,14 +220,12 @@ img {
 
 .close_burger {
     display: none;
-    margin-top: 24px;
 }
 
 @media (max-width: 900px) {
     .burger {
         display: block;
         margin-bottom: 24px;
-        margin-top: 24px;
     }
     .navigation {
         display: none;
@@ -222,8 +235,7 @@ img {
         z-index: initial;
         max-width: 320px;
         height: auto;
-        padding: 16px;
-        margin-bottom: 16px;
+        padding: 16px 16px 32px 0px;
     }
     .itemsList {
         margin-top: 0px;
@@ -231,7 +243,7 @@ img {
     body {
         display: flex;
         flex-direction: column;
-        padding: 0px 32px;
+        padding: 32px;
     }
     .mainBlock {
         height: auto;
@@ -247,7 +259,7 @@ img {
 
 @media (max-width: 768px) {
     body {
-        padding: 0px 16px;
+        padding: 16px;
     }
     .links {
         gap: none;
