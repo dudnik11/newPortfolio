@@ -206,7 +206,8 @@ img {
 @media (max-width: 900px) {
     .burger {
         display: block;
-        margin-bottom: 28px;
+        margin-bottom: 24px;
+        margin-top: 24px;
     }
     .navigation {
         display: none;
