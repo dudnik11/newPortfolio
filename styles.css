@@ -127,6 +127,10 @@ b {
     -webkit-font-smoothing: antialiased;
 }
 
+p.cases {
+    line-height: 150%;
+}
+
 b {
     font-weight: 700;
 }
@@ -214,6 +218,23 @@ img {
     display: none;
 }
 
+
+/* Cases */
+
+.casesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+}
+
+.caseTile {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 338px;
+}
+
 .burger {
     display: none;
 }
@@ -250,7 +271,7 @@ img {
         padding: 0px;
     }
     .content {
-        margin: 0px;
+        margin: auto;
     }
     img {
         max-width: 100%;
@@ -279,5 +300,9 @@ img {
     }
     .imgS {
         max-width: 100%;
+    }
+    .casesGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
     }
 }
