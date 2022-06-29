@@ -253,4 +253,10 @@ img {
     .portmoneDesktopVisible {
         display: none;
     }
+    .pictures_row {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 700px;
+    }
 }
