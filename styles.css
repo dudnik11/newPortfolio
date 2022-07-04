@@ -191,6 +191,8 @@ mark.preply {
     flex-direction: column;
     gap: 25px;
     width: 700px;
+    justify-content: left;
+    justify-items: left;
 }
 
 .picture {
@@ -322,5 +324,8 @@ img.case {
     }
     .caseTile {
         max-width: 100%;
+    }
+    .block {
+        width: calc();
     }
 }
