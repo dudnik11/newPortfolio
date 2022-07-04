@@ -289,6 +289,9 @@
             height: auto;
             padding: 0px;
         }
+        .mainBlockMainPage {
+            height: auto;
+        }
         .content {
             margin: auto;
         }
