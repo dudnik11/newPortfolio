@@ -326,6 +326,6 @@ img.case {
         max-width: 100%;
     }
     .block {
-        width: calc();
+        width: 100vw;
     }
 }
