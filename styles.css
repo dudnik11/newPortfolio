@@ -131,6 +131,10 @@ p.cases {
     line-height: 150%;
 }
 
+p.date {
+    color: #999999;
+}
+
 b {
     font-weight: 700;
 }
@@ -286,10 +290,6 @@ img.case {
 @media (max-width: 768px) {
     body {
         padding: 16px;
-    }
-    .links {
-        gap: none;
-        justify-content: space-between;
     }
     .pictureMobileVisible {
         display: block;

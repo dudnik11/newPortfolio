@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <link href="../styles.css" rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<script>
+    function myFunction() {
+        let x = document.getElementById("navigation");
+        let burger = document.getElementById("burger");
+        let cross = document.getElementById("close_burger")
+        if (x.style.display == "block") {
+            x.style.display = "none";
+            burger.style.display = "block";
+            cross.style.display = "none";
+        } else {
+            x.style.display = "block"
+            burger.style.display = "none";
+            cross.style.display = "block";
+        }
+    }
+</script>
+
+<body>
+    <a href="javascript:void(0);" class="burger" id="burger" onclick="myFunction()">
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" rx="1" fill="#333333"/>
+            <rect y="5" width="16" height="2" rx="1" fill="#333333"/>
+            <rect y="10" width="16" height="2" rx="1" fill="#333333"/>
+            </svg>
+    </a>
+    <a href="javascript:void(0);" class="close_burger" id="close_burger" onclick="myFunction()">
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="14.364" y="1.05023" width="16" height="2" rx="1" transform="rotate(135 14.364 1.05023)" fill="#333333"/>
+            <rect x="3.05025" y="-0.363953" width="16" height="2" rx="1" transform="rotate(45 3.05025 -0.363953)" fill="#333333"/>
+            </svg>
+    </a>
+
+    <nav>
+        <div class="navigation" id="navigation">
+            <a class="nav_a">Ігор Дудник</a>
+            <div class="itemsList">
+                <a class="nav_a">Кейси</a>
+                <a class="nav_a" style="color: #333333">Робота</a>
+                <a class="nav_a">Контакти</a>
+            </div>
+        </div>
+    </nav>
+    <div class="mainBlock">
+        <div class="content">
+            <div class="article_block">
+                <h1>Досвід роботи</h1>
+                <div class="text_block">
+                    <div class="workPlace">
+                        <h3>Selerant (Trace One), Product designer</h3>
+                        <p class="date">Dec 2019 — Present</p>
+                    </div>
+                    <ul>
+                        <li>Проєктую дизайн складних b2b систем;</li>
+                        <li>став «правою рукою» продакт менеджера;</li>
+                        <li>разом з дизайн менеджером розробили дизайн стратегію для продукту;</li>
+                        <li>допоміг налагодити дизайн процеси в компанії використовуючи залучення користувачів через інтервʼю та тестування;</li>
+                        <li>створив репозиторій знань про користувачів, де зібрана вся інформація про всі активності з ними;</li>
+                        <li>створив обʼєктно-орієнтовану дизайн систему для гігантського продукту, чим значно пришвидшив процеси дизайну та розробки, а продукт зробив більш консистентним;</li>
+                        <li>разом з продакт-менеджером підготували продукт до data-driven підходу: визначили, що ми хочемо знати про поведінку користувачів в продукті та якими метриками ми це можемо виміряти (використали фреймворк HEART від Google), підготували
+                            продукт, команду та стейкхолдерів до запуску аналітики;</li>
+                        <li>став неформальним дизайн-лідом;</li>
+                        <li>менторю джуніор-дизайнерів;</li>
+                        <li>навчаю команду: провів воркшопи на теми Фігми, дизайн-систем, human centered design;</li>
+                        <li>підтримую інші продуктові команди та маркетинг;</li>
+
+                    </ul>
+                </div>
+                <div class="text_block">
+                    <div class="workPlace">
+                        <h3>Govitall, Product designer</h3>
+                        <p class="date">Mar 2019 — Dec 2019</p>
+                    </div>
+                    <ul>
+                        <li>Дизайн інтерфейсів і користувацького досвіду;</li>
+                        <li>збір вимог до дизайну;</li>
+                        <li>оцінка юзабіліті;</li>
+                        <li>аналіз юзкейсів;</li>
+                        <li>інформаційна архітектура;</li>
+                        <li>дослідження користувачів;</li>
+                        <li>генерація гіпотез;</li>
+                        <li>аналітика;</li>
+                        <li>прототипування;</li>
+                        <li>створення Style Guides;</li>
+                        <li>дизайн маркетингових і рекламних матеріалів;</li>
+                        <li>підтримка інших команд з дизайном інтерфейсів, тестуванням ідей та запуском нових продуктів.</li>
+                    </ul>
+                </div>
+                <div class="text_block">
+                    <div class="workPlace">
+                        <h3>ZORELiT, UX/UI Designer</h3>
+                        <p class="date">Feb 2018 — Apr 2019</p>
+                    </div>
+                    <ul>
+                        <li>Навчив і перевів команду на Figma, чим пришвидшив процеси дизайну та розробки;</li>
+                        <li>спроєктував дизайн intranet-порталу для компанії з 91000+ працівників;</li>
+                        <li>працював з Puma, Lacoste, Метинвест, Караван;</li>
+                        <li>Веб дизайн;</li>
+                        <li>прототипування;</li>
+                        <li>концепти дизайнів;</li>
+                        <li>дизайн маркетингових і рекламних матеріалів;</li>
+                        <li>аналіз ринку;</li>
+                        <li>корпоративні веб сайти, е-комерс, стартапи та благодійні проекти.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="article_block">
+                <h1>Освіта</h1>
+                <div class="text_block">
+                    <div class="workPlace">
+                        <h3>Product Design Interfaces Professium, Projector Institute</h3>
+                        <p class="date">Sep 2019 — Sep 2020</p>
+                    </div>
+                    <div class="workPlace">
+                        <h3>UX Design, Projector Institute</h3>
+                        <p class="date">Apr 2019 — Jul 2019</p>
+                        <p>✨Gold diploma✨🎓</p>
+                    </div>
+                    <div class="workPlace">
+                        <h3>Web Design, Projector Institute</h3>
+                        <p class="date">Sep 2017 — January 2018</p>
+                    </div>
+                </div>
+            </div>
+            <div class="article_block">
+                <h1>Languages</h1>
+                <div class="text_block">
+                    <p>🇺🇦 Ukrainian — native</p>
+                    <p>russian — fluent, but trying to forget</p>
+                    <p>🇬🇧 English — intermediate</p>
+                </div>
+            </div>
+</body>
+
+</html>
