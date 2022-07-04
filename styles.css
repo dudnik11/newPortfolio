@@ -266,7 +266,7 @@ img.case {
 @media (max-width: 900px) {
     .burger {
         display: block;
-        margin-bottom: 24px;
+        margin-bottom: 40px;
     }
     .navigation {
         display: none;
