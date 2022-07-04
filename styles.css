@@ -16,7 +16,7 @@
         width: 320px;
         height: 100vh;
         height: -webkit-fill-available;
-        padding: 28px;
+        padding: 40px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
@@ -44,7 +44,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 28px;
+        padding: 40px;
     }
     
     .content {
