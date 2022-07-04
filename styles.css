@@ -290,7 +290,7 @@
             padding: 0px;
         }
         .mainBlockMainPage {
-            height: calc(100%-52px);
+            height: calc(100vh - 52px);
         }
         .content {
             margin: auto;
