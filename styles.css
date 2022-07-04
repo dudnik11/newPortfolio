@@ -305,7 +305,7 @@
             padding: 16px;
         }
         .mainBlockMainPage {
-            height: auto;
+            height: 100vh;
         }
         .pictureMobileVisible {
             display: block;
