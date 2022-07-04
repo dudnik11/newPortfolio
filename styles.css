@@ -34,7 +34,7 @@ body {
 }
 
 .mainBlockMainPage {
-    height: 100vh;
+    height: calc(100vh-68px);
     height: -webkit-fill-available;
     display: flex;
     flex-direction: column;
