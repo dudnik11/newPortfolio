@@ -1,9 +1,12 @@
+    html {
+        scroll-behavior: smooth;
+    }
+    
     body {
         display: grid;
         grid-template-columns: 151px 1fr;
         margin: 0px;
         padding: 0px;
-        padding-bottom: 32px;
     }
     
     .navigation {
@@ -44,7 +47,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 40px;
+        padding: 40px 40px 60px 40px;
     }
     
     .content {
