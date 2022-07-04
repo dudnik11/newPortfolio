@@ -291,7 +291,6 @@
         }
         .mainBlockMainPage {
             height: auto;
-            height: calc(100vh-68px);
             height: -webkit-fill-available;
         }
         .content {
