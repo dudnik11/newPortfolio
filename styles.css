@@ -186,6 +186,12 @@ mark.preply {
     gap: 16px;
 }
 
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
 .picture {
     display: flex;
     flex-direction: column;
