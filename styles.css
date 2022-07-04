@@ -279,7 +279,7 @@ img.case {
         padding: 16px 16px 32px 0px;
     }
     .itemsList {
-        margin-top: 0px;
+        margin-top: 12px;
     }
     body {
         display: flex;
@@ -301,6 +301,9 @@ img.case {
 @media (max-width: 768px) {
     body {
         padding: 16px;
+    }
+    .mainBlockMainPage {
+        height: auto;
     }
     .pictureMobileVisible {
         display: block;
