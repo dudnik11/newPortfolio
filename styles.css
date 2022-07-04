@@ -323,4 +323,7 @@ img.case {
     .caseTile {
         max-width: 100%;
     }
+    .block {
+        width: 100%;
+    }
 }
