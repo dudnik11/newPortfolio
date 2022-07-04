@@ -190,6 +190,7 @@ mark.preply {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    width: 700px;
 }
 
 .picture {
@@ -321,5 +322,8 @@ img.case {
     }
     .caseTile {
         max-width: 100%;
+    }
+    .block {
+        width: auto;
     }
 }
