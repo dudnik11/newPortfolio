@@ -289,10 +289,7 @@
             height: auto;
             padding: 0px;
         }
-        .mainBlockMainPage {
-            height: auto;
-            height: -webkit-fill-available;
-        }
+        .mainBlockMainPage {}
         .content {
             margin: auto;
         }
