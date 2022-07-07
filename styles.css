@@ -55,7 +55,7 @@
         margin: auto;
         display: flex;
         flex-direction: column;
-        gap: 60px;
+        gap: 80px;
     }
     
     .content_main {
@@ -91,7 +91,6 @@
         font-size: 32px;
         line-height: 100%;
         color: #333333;
-        margin-bottom: 8px;
     }
     
     h3 {
