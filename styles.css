@@ -163,6 +163,11 @@
         color: #44C5CF;
     }
     
+    mark.vibe {
+        background-color: transparent;
+        color: #9D59FE;
+    }
+    
     .nav_a {
         color: #999999;
     }
