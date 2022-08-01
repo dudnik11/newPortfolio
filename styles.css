@@ -215,6 +215,7 @@
         flex-direction: row;
         gap: 4px;
         max-width: 700px;
+        justify-content: center;
     }
     
     .imgS {
