@@ -148,6 +148,19 @@
         color: #2897E5;
     }
     
+    code {
+        background-color: #efefef;
+        border-radius: 4px;
+        padding: 0px 4px;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 175%;
+        color: #066dd4;
+        -webkit-font-smoothing: antialiased;
+    }
+    
     mark.lun {
         background-color: transparent;
         color: #F87822;
