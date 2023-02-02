@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../styles.css" rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ihor Dudnyk — product designer</title>
+</head>
+<script>
+    function myFunction() {
+        let x = document.getElementById("navigation");
+        let burger = document.getElementById("burger");
+        let cross = document.getElementById("close_burger")
+        if (x.style.display == "block") {
+            x.style.display = "none";
+            burger.style.display = "block";
+            cross.style.display = "none";
+        } else {
+            x.style.display = "block"
+            burger.style.display = "none";
+            cross.style.display = "block";
+        }
+    }
+</script>
+
+<body>
+    <a href="javascript:void(0);" class="burger" id="burger" onclick="myFunction()">
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" rx="1" fill="#333333"/>
+            <rect y="5" width="16" height="2" rx="1" fill="#333333"/>
+            <rect y="10" width="16" height="2" rx="1" fill="#333333"/>
+            </svg>
+    </a>
+    <a href="javascript:void(0);" class="close_burger" id="close_burger" onclick="myFunction()">
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="14.364" y="1.05023" width="16" height="2" rx="1" transform="rotate(135 14.364 1.05023)" fill="#333333"/>
+            <rect x="3.05025" y="-0.363953" width="16" height="2" rx="1" transform="rotate(45 3.05025 -0.363953)" fill="#333333"/>
+            </svg>
+    </a>
+
+    <nav>
+        <div class="navigation" id="navigation">
+            <a class="nav_a" href="../index.html">Ihor Dudnyk</a>
+            <div class="itemsList">
+                <a class="nav_a" href="../ua/cases.html" style="color:#333333">Cases</a>
+                <a class="nav_a " href="../ua/work.html ">Work</a>
+                <a class="nav_a " href="../ua/contacts.html">Contacts</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class=" mainBlock ">
+        <div class="content ">
+            <div class="article_block ">
+                <h1>LUN Misto: where to live comfortably in Kyiv</h1>
+                <div class="text_block ">
+                    <h3>What is it?</h3>
+                    <p>LUN Misto is a project of LUN that explores urban space, analyzes open data, and creates a demand for quality living in the metropolis.</p>
+                    <p>The Comfort Map is a map that visualizes the results of research that helps people understand where to live comfortably in Kyiv.</p>
+                </div>
+                <div class="picture ">
+                    <img src="../img/lun/lun1.png ">
+                    <h5>Now the comfort map looks like this</h5>
+                </div>
+                <div class="text_block ">
+                    <h3>Task</h3>
+                    <ol>
+                        <li>Analyze what criteria people use to choose a comfortable place to live, how they define comfort</li>
+                        <li>Suggest improvements for the map by solving the problem of the multilayer filter.</li>
+                    </ol>
+                </div>
+                <div class="text_block ">
+                    <h3>For whom?</h3>
+                    <ul>
+                        <li>Kyiv residents who choose an area to buy or rent an apartment;</li>
+                        <li>people who care about the future of Kyiv;</li>
+                        <li>LUN users;</li>
+                        <li>Kyiv urbanists.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="article_block ">
+                <h2><mark class="lun ">User research</mark></h2>
+                <div class="text_block ">
+                    <h3>Interviews</h3>
+                    <p>To help people choose a comfortable place for living, we need to understand how they do it now and what they consider as comfortable. To do this, we conducted qualitative research, including in-depth interviews and testing of the existing
+                        solution. We translated the audio recordings into text and identified <b>the pains, gains, and tasks </b> that people set for themselves. This was the result of the research phase.</p>
+                </div>
+                <div class="picture ">
+                    <img src="../img/lun/lun2.png ">
+                    <h5>The artifacts were divided into 8 categories</h5>
+                </div>
+                <div class="text_block ">
+                    <h3>Jobs to be done</h3>
+                    <p>Next, we had to turn the results of the interviews into an artifact that would help preserve and share the gained knowledge, as well as work with it further. The results of our interviews did not fit into a single scenario, there were
+                        many of them and they touched different areas of life. That's why we used Jobs to be Done.</p>
+                    <p>Based on the pains, gains, and tasks we received, we generated 31 job stories. This is also a lot, so we selected 9 of them using a two-factor analysis. Each job story was rated from 0 to 10 based on two parameters: how well the need
+                        is met and how important it is to people. We selected the jobs with the most optimal ratio and generated solutions for them.</p>
+                </div>
+                <div class="picture ">
+                    <img src="../img/lun/lun3.png ">
+                    <h5>Two-factor analysis</h5>
+                </div>
+            </div>
+            <div class="article_block ">
+                <h2><mark class="lun ">Solutions</mark></h2>
+                <div class="text_block ">
+                    <h3>Testing</h3>
+                    <p>All the ideas were collected into one clickable prototype and tested on users. To do this, we came up with several testing scenarios. The prototype went through several iterations. The final version included the following solutions.</p>
+                </div>
+                <div class="text_block ">
+                    <h3>A character and on<mark class="lun ">bird</mark>ing</h3>
+                    <p>While testing the existing solution, we saw that it was difficult for users to navigate a large number of filters and it was unclear what information they displayed and how the map worked in general. To solve this, we added the bird
+                        Ficha, an existing character in LUN. It will accompany the user on the map and help them explore the districts of Kyiv. To do this, we drew Ficha in different situations.</p>
+                </div>
+                <div class="picture ">
+                    <img src="../img/lun/lun4.png ">
+                </div>
+                <div class="text_block ">
+                    <h3>Where in Kyiv is the best to...</h3>
+                    <p>We found out that people don't want to switch different filters as much as they want to find out a specific answer to a question <b class="bold ">"Where is best place to...?".</b>
+                    </p>
+                    <p>During the study, we identified 3 criteria or 3 types of activity that are important to people: <b class="bold ">living, resting and traveling.</b> All the filters were divided into these three categories, reducing the workload on
+                        the user and speaking the same language with them.
+                    </p>
+                    <p>Sharing is one of the indicators of project success. That's why we added a separate button for this.</p>
+                </div>
+                <div class="picture ">
+                    <img src="../img/lun/lun5.png ">
+                    <h5>3 tabs: live, rest and travel</h5>
+                </div>
+                <div class="text_block ">
+                    <h3>Rating of districts</h3>
+                    <p>Now, to find out where in Kyiv is the best place to live, the user can select the necessary criteria and compare different districts with each other on one screen.</p>
+                </div>
+                <div class="picture ">
+                    <img src="../img/lun/lun6.png ">
+                    <h5>You can also go to the relevant studies</h5>
+                </div>
+                <div class="text_block ">
+                    <h3>And what about the facilities?</h3>
+                    <p>Now you can see which places are nearby. There is also a night map that shows which places are open at night.</p>
+                </div>
+                <div class="picture ">
+                    <img src="../img/lun/lun7.png ">
+                    <h5>Kyiv at night</h5>
+                </div>
+                <div class="text_block ">
+                    <h3>How long to work?</h3>
+                    <p>One of the most important criteria when choosing a place to live is how long it takes to get to and from work, how far is it to the store, is there a coffee shop nearby. We tried to make it possible to find the answers on the map:
+                        You can select a point and see how long it takes to get to other places.</p>
+                </div>
+                <div class="picture ">
+                    <img src="../img/lun/lun8.png ">
+                    <h5>In the prototype, this is shown simply as a radius, but ideally it should be shown taking into account real roads</h5>
+                </div>
+                <div class="picture ">
+                    <img src="../img/lun/lun9.png " style="border: none; ">
+                    <h5>And here's how LUN implemented it in their bird app</h5>
+                </div>
+            </div>
+            <div class="article_block ">
+                <h2><mark class="lun ">What's next?</mark></h2>
+                <div class="text_block ">
+                    <h3>Chatbot</h3>
+                    <p>The character can act as a chatbot, answering users' questions, such as "where is the cleanest air?" or "where is the safest place to live?" This is easy to test and implement.</p>
+                </div>
+                <div class="text_block ">
+                    <h3>Engagement</h3>
+                    <p>In the future, users can be involved in filling out the map and making them "partners" in improving Kyiv. For example, they can enter data about neighborhoods they visit or care about.</p>
+                    <p>For this, they can receive points, increasing their rating among other concerned residents of Kyiv: for example, "New to the City", "Local", "Not Indifferent", and the highest level is “KyivLover".</p>
+                    <p>Those who have reached the highest level can be given LUN merchandise, which will help spread the idea of the project and draw attention to the care for the city we live in.</p>
+                </div>
+            </div>
+            <div class="article_block ">
+                <div class="highlight ">
+                    <h3>I dream</h3>
+                    <p>of creating valuable products and changing people's everyday lives for the better</p>
+                </div>
+                <div class="links">
+                    <a href="../ua/Ihor Dudnyk CV.pdf" download>CV</a>
+                    <a href="mailto:dudnik11@gmail.com ">Mail</a>
+                    <a href="https://t.me/dudnik11 ">Telegram</a>
+                    <a href="https://www.linkedin.com/in/igor-dudnyk-302822175/ ">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
