@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../styles.css" rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ihor Dudnyk — product designer</title>
+</head>
+<script>
+    function myFunction() {
+        let x = document.getElementById("navigation");
+        let burger = document.getElementById("burger");
+        let cross = document.getElementById("close_burger")
+        if (x.style.display == "block") {
+            x.style.display = "none";
+            burger.style.display = "block";
+            cross.style.display = "none";
+        } else {
+            x.style.display = "block"
+            burger.style.display = "none";
+            cross.style.display = "block";
+        }
+    }
+</script>
+
+<body>
+    <a href="javascript:void(0);" class="burger" id="burger" onclick="myFunction()">
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" rx="1" fill="#333333"/>
+            <rect y="5" width="16" height="2" rx="1" fill="#333333"/>
+            <rect y="10" width="16" height="2" rx="1" fill="#333333"/>
+            </svg>
+    </a>
+    <a href="javascript:void(0);" class="close_burger" id="close_burger" onclick="myFunction()">
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="14.364" y="1.05023" width="16" height="2" rx="1" transform="rotate(135 14.364 1.05023)" fill="#333333"/>
+            <rect x="3.05025" y="-0.363953" width="16" height="2" rx="1" transform="rotate(45 3.05025 -0.363953)" fill="#333333"/>
+            </svg>
+    </a>
+
+    <nav>
+        <div class="navigation" id="navigation">
+            <a class="nav_a" href="../index.html">Ihor Dudnyk</a>
+            <div class="itemsList">
+                <a class="nav_a" href="../ua/cases.html" style="color:#333333">Cases</a>
+                <a class="nav_a " href="../ua/work.html ">Experience</a>
+                <a class="nav_a " href="../ua/contacts.html">Contacts</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class=" mainBlock ">
+        <div class="content ">
+            <div class="article_block ">
+                <h1><mark class="vibe">Vibe:</mark> how my mom helped me create a new product</h1>
+                <div class="picture ">
+                    <video src="../img/vibe/vibe.mp4" autoplay loop></video>
+                    <h5>The result</h5>
+                </div>
+                <div class="text_block ">
+                    <h3>What is it?</h3>
+                    <p>There is a company called Selerant that has an ecosystem of b2b products. These products help food companies manage the life cycle of their products from formulation to logistics and processing. The system is used by such companies
+                        as Nestle, Lindt, Mars Wrigley, Barilla, Bacardi, and Avon.</p>
+                </div>
+                <div class="text_block ">
+                    <h3>Task</h3>
+                    <p>To create Vibe, a tool for automating business processes in an existing b2b product ecosystem that:
+                        <ul>
+                            <li>is no code tool;</li>
+                            <li>supports all existing objects from our various b2b systems;</li>
+                            <li>interacts with third-party tools (for example, messengers);</li>
+                            <li>scalable.</li>
+                        </ul>
+                    </p>
+                </div>
+
+            </div>
+            <div class="article_block">
+                <h2><mark class="vibe">Research</mark></h2>
+                <div class="text_block">
+                    <h3>Stakeholder interviews</h3>
+                    <p>We interviewed the main stakeholders to gather as much information about the product and business. This way we understood the goals of the product, where the money is, what they expect from our work, how they will evaluate success,
+                        what they want to achieve in the future and why, and most importantly, we synchronized our expectations. </p>
+                </div>
+                <div class="text_block">
+                    <h3>Analyzing similar solutions</h3>
+                    <p>To avoid building a super-complex solution on our own, we first decided to look at others. Among them were Microsoft Power Automate, Salesforce Flow, Bizaggi, and Kissflow. Microsoft Power Automate turned out to be the most popular.
+                        It is not only intuitive and understandable, but also fit into our vision of the future product. </p>
+                </div>
+                <div class="picture">
+                    <img class="vibe" src="../img/vibe/vibe2.png">
+                    <h5>Microsoft Power Automate</h5>
+                </div>
+                <div class="text_block">
+                    <h3>Old solution and OOP</h3>
+                    <p>We found out from stakeholders that another team had once tried to do something similar, but it was shelved, and we should start with this. The solution was not very good - it had bad UX, looked like it came from the 90s, and even
+                        its creators could not even its creators couldn't figure out how it worked. However, it had an important element - it already contained all the objects with their properties that exist in our product ecosystem and the basic operations
+                        with them.</p>
+                    <p>So we analyzed it, made an object model, and used it as a starting point for a new product.</p>
+                </div>
+                <div class="picture">
+                    <img class="vibe" src="../img/vibe/vibe3.png">
+                    <h5>This is how the old solution looked like</h5>
+                </div>
+                <div class="picture">
+                    <img class="vibe" src="../img/vibe/vibe4.png">
+                    <h5>Object model</h5>
+                </div>
+                <div class="text_block">
+                    <h3>How my mom helped</h3>
+                    <p>While I was making decisions in my head, I wasn't sure about the basic concept of what it should look like.</p>
+                    <p>Once I was visiting my parents and returned home very late. And then my iPhone sent me a reminder to text my mom that I was home. Of course! My mom often worries, and I'm afraid of forgetting, so I automated it: I set it up in Shortcuts,
+                        that when I came home late (geolocation + time), my iPhone would suggest me to text my mom (just suggest, I don't need it to send a message every time 🤭). I remembered this at the right time, because this card interface fit perfectly
+                        into our idea. The principle of "not inventing your own, but reusing the existing" has once again saved my life. </p>
+                </div>
+                <div class="pictures_row " style="gap: 20px">
+                    <img class="imgS" src="../img/vibe/vibe5.png">
+                    <img class="imgS" src="../img/vibe/vibe6.png">
+                </div>
+                <div class="highlight">
+                    <h3 style="margin: auto;">Do not invent your own, but reuse the existing</h3>
+                </div>
+            </div>
+            <div class="article_block">
+                <h2><mark class="vibe">Solution</mark></h2>
+                <div class="text_block">
+                    <p>I'll explain in very simple terms, but in reality, this is a product for a narrow circle of specialists with its own terminology. </p>
+                </div>
+                <div class="text_block">
+                    <h3>The board and cards</h3>
+                    <p>Even at the initial stages, I realized that it would be a board with cards on it, but only now it began to make real sense and become concrete. </p>
+                    <p>So, we have 3 main types of cards:</p>
+                    <ol>
+                        <li><b>Trigger.</b> This is when the automatic flow starts. For example, when someone creates a new project.</li>
+                        <li><b>Action.</b> This is what exactly will happen. For example, create a task, send an email, send a confirmation request to a manager, etc. Actions can take place linearly one after the other, or in parallel. </li>
+                        <li><b>Condition.</b> This is a boolean expression, yes/no. We set a condition, if yes, then one action is performed, if no, then another. </li>
+                    </ol>
+                </div>
+                <div class="picture">
+                    <img class="vibe" src="../img/vibe/vibe7.png">
+                    <h5>Types of cards and their examples</h5>
+                </div>
+                <div class="picture">
+                    <img class="vibe" src="../img/vibe/vibe8.png">
+                    <h5>We fill in all the necessary information directly in the card...</h5>
+                </div>
+                <div class="picture">
+                    <img class="vibe" src="../img/vibe/vibe8_1.png">
+                    <h5>...and combine the cards with each other...</h5>
+                </div>
+                <div class="picture">
+                    <img class="vibe" src="../img/vibe/vibe8_2.png">
+                    <h5>...and even in nonlinear flows.</h5>
+                </div>
+                <div class="text_block">
+                    <h3>Variables</h3>
+                    <p>But what if we want to access some property of an object to change it, insert a value, or check it? For this, we have variables, and that's what the object model was created for.</p>
+                    <p>For example, when someone creates a new project, we want an email to be sent to the manager with the project name. With variables, we can insert the "project name" variable into another card and it will be populated where it needs
+                        to be every time. And all these works between our different products.</p>
+                </div>
+                <img class="vibe" src="../img/vibe/vibe9.png">
+                <div class="text_block">
+                    <h3>Integrations</h3>
+                    <p>So far, we've only done things inside our products, but what if we want to go outside? For example, send a message to Teams or Slack. For this, we will have API integrations. For users, it will look like just another card.</p>
+                </div>
+                <img class="vibe" src="../img/vibe/vibe10.png">
+                <div class="text_block">
+                    <h3>User testing</h3>
+                    <p>We created a clickable prototype to test the ideas on users. Luckily, we didn't have to look for them for a long time, because they were already existing users of our products. We found places where users did not understand or found
+                        it difficult, so the prototype went through several iterations. Mostly, these were fixes to micro-interactions.</p>
+                </div>
+            </div>
+            <div class="article_block">
+                <h2><mark class="vibe">Conclusions</mark></h2>
+                <div class="text_block">
+                    <p>So, my manager and I created and tested a new product that met the requirements:</p>
+                    <ul>
+                        <li>is a no code tool;</li>
+                        <li>can work with all products of our ecosystem;</li>
+                        <li>has integrations that organically fit into the form of cards;</li>
+                        <li>scalable, you can add new types of cards, objects, and integrations.</li>
+                    </ul>
+                </div>
+                <div class="text_block">
+                    <p>This was only the discovery phase, and we have a delivery phase coming up:</p>
+                    <ul>
+                        <li>development, for which we have already prepared: at the previous stages, we consulted with developers and validated the solution for feasibility, and the design system on the design side is already ready;</li>
+                        <li>product launch;</li>
+                        <li>an endless cycle of feedback and iteration, because the product is never ready.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="article_block ">
+                <div class="highlight ">
+                    <h3>I dream</h3>
+                    <p>of creating valuable products and changing people's everyday lives for the better</p>
+                </div>
+                <div class="links">
+                    <a href="../ua/Ihor Dudnyk CV.pdf" download>CV</a>
+                    <a href="mailto:dudnik11@gmail.com ">Mail</a>
+                    <a href="https://t.me/dudnik11 ">Telegram</a>
+                    <a href="https://www.linkedin.com/in/igor-dudnyk-302822175/ ">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
