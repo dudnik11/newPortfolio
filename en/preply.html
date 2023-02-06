@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../styles.css" rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ihor Dudnyk — product designer</title>
+</head>
+<script>
+    function myFunction() {
+        let x = document.getElementById("navigation");
+        let burger = document.getElementById("burger");
+        let cross = document.getElementById("close_burger")
+        if (x.style.display == "block") {
+            x.style.display = "none";
+            burger.style.display = "block";
+            cross.style.display = "none";
+        } else {
+            x.style.display = "block"
+            burger.style.display = "none";
+            cross.style.display = "block";
+        }
+    }
+</script>
+
+<body>
+    <a href="javascript:void(0);" class="burger" id="burger" onclick="myFunction()">
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" rx="1" fill="#333333"/>
+            <rect y="5" width="16" height="2" rx="1" fill="#333333"/>
+            <rect y="10" width="16" height="2" rx="1" fill="#333333"/>
+            </svg>
+    </a>
+    <a href="javascript:void(0);" class="close_burger" id="close_burger" onclick="myFunction()">
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="14.364" y="1.05023" width="16" height="2" rx="1" transform="rotate(135 14.364 1.05023)" fill="#333333"/>
+            <rect x="3.05025" y="-0.363953" width="16" height="2" rx="1" transform="rotate(45 3.05025 -0.363953)" fill="#333333"/>
+            </svg>
+    </a>
+
+    <nav>
+        <div class="navigation" id="navigation">
+            <a class="nav_a" href="../index.html">Ihor Dudnyk</a>
+            <div class="itemsList">
+                <a class="nav_a" href="../ua/cases.html" style="color:#333333">Cases</a>
+                <a class="nav_a " href="../ua/work.html ">Experience</a>
+                <a class="nav_a " href="../ua/contacts.html">Contacts</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mainBlock ">
+        <div class="content ">
+            <div class="article_block ">
+                <h1><mark class="preply ">Preply:</mark> how to automate teacher and student routines</h1>
+                <div class="text_block ">
+                    <h3>What is it?</h3>
+                    <p>Preply is an online language learning platform that helps tutors and students find each other and organize classes.</p>
+                </div>
+                <div class="picture ">
+                    <img src="../img/preply/preply1.png ">
+                    <h5>This is what communication between a student and a tutor looks like now</h5>
+                </div>
+                <div class="text_block ">
+                    <h3>For whom</h3>
+                    <p><b class="bold ">Tutors </b>are people who know one or more languages and are ready to teach others. Most of them are teachers by profession.</p>
+                    <p><b class="bold ">Students </b>are people who need to improve their language skills for specific purposes. For example, to pass TOEFL exams, to pass interviews, to assimilate into another country, etc.</p>
+                </div>
+                <div class="text_block ">
+                    <h3>Business goals</h3>
+                    <p>To simplify and speed up the communication between tutors and students so that it brings more money and faster, specifically:</p>
+                    <ul>
+                        <li>convert students into paying leads faster;</li>
+                        <li>encourage lesson bookings;</li>
+                        <li>help maintain communication between the student and the tutor.</li>
+                    </ul>
+                </div>
+                <div class="text_block ">
+                    <h3>Tasks</h3>
+                    <ol>
+                        <li>Add filters or search by students to the messenger so that tutors can find the right students faster and improve communication with them.</li>
+                        <li>Add message templates for tutors. Tutors often write the same introductions, ask the same questions to new students, and often keep those texts in a separate file. The templates should help them to do this faster and better to
+                            respond to students' first messages, sharing positive feedback, and prompting students to schedule their next lesson or purchase hours. </li>
+                    </ol>
+                    <p>Both features need to be further researched.</p>
+                </div>
+            </div>
+            <div class="article_block ">
+                <h2><mark class="preply ">Research and analysis</mark></h2>
+                <div class="text_block ">
+                    <h3>Stakeholder interviews</h3>
+                    <p>We started with a Preply briefing. We discussed what we are doing, why and for whom, how we will measure success, and where the money is. The results of the briefing were summarized in a mindmap to structure it and separate the unnecessary</p>
+                    <p>Based on this, we made a plan for further work to understand what stages we will have and what results we expect at each stage.</p>
+                </div>
+                <div class="text_block ">
+                    <h3>Understanding the chaos</h3>
+                    <p>To begin with, we conducted our own audit of the platform - we were tutors, students, and passed the flows that were relevant to the tasks. We got a chance to study the results of previous research. We also got to know our competitors
+                        - direct and indirect, and how they implement similar functionality.</p>
+                    <p>At the same time, we built a <b>business process diagram</b> to understand how everything works and where the money is. </p>
+                </div>
+                <div class="picture ">
+                    <img src="../img/preply/preply2.png ">
+                    <h5>Business process diagram</h5>
+                </div>
+                <div class="text_block ">
+                    <p>We created <b>an object model</b> to see what objects are in the system and how they interact. This will help to avoid breaking anything in the future, as well as to find duplicate objects and defects in the product flow.
+                    </p>
+                </div>
+                <div class="picture ">
+                    <img src="../img/preply/preply3.png ">
+                    <h5>Object model</h5>
+                </div>
+                <div class="text_block ">
+                    <h3>International research</h3>
+                    <p>As soon as we assumed the main pains and formed them in the form of hypotheses, we moved on to in-depth interviews. We validated our hypotheses, studied the real reasons for the tutors' requests, and felt the context in which they
+                        were located.
+                    </p>
+                    <p>We conducted a total of 7 interviews, which coincided with the beginning of the pandemic, but this did not stop us: the product is used all over the world, so we conducted interviews remotely with people from different countries (Spain,
+                        Germany, Israel, and Australia).</p>
+                </div>
+                <div class="pictures_row ">
+                    <img class="imgS imgSPreply " src="../img/preply/preply4.gif ">
+                    <img class="imgS imgSPreply " src="../img/preply/preply5.gif ">
+                </div>
+                <div class="text_block ">
+                    <h3>Result</h3>
+                    <p>We found that our problem went deeper than just filtering students and creating message templates. We needed to make communication fast, timely, and most importantly, effective. So that every tutor's request ends with a student's action.
+                    </p>
+                    <p>The interviews also provided a good understanding of the context: at what moment the tutor needs the templates, when they need to find the student, and why they are looking for them at all. How does a student feel when they receive
+                        a message about what they expect to hear or receive from the tutor?
+                    </p>
+                    <div class="highlight ">
+                        <p><b class="bold ">That's why the basis of our solution is a messenger that is convenient at a specific moment of each situation.</b></p>
+                    </div>
+                </div>
+                <div class="text_block ">
+                    <h3>User testing</h3>
+                    <p>During the interviews, we arranged another meeting to test the prototype. We built clickable prototypes that went through several iterations. Below are the solutions we showed at the final presentation.</p>
+                </div>
+            </div>
+
+            <div class="article_block ">
+                <h2><mark class="preply ">Solutions</mark></h2>
+                <div class="text_block ">
+                    <h3>Tabs</h3>
+                    <p>During the interview, we learned how tutors divide students in their heads. Based on this, we divided the list of students into tabs:</p>
+                    <ol>
+                        <li><b class="bold ">Requests.</b>This includes new requests and students who have had a test lesson. </li>
+                        <li><b class="bold ">Active.</b>This includes students who have purchased a package of classes.</li>
+                        <li><b class="bold ">Archive.</b>Inactive or uninterested students.</li>
+                    </ol>
+                </div>
+                <img src="../img/preply/preply6.png ">
+                <div class="text_block ">
+                    <h3>Status and search</h3>
+                    <p>The interviews revealed to us what the tutor needs to write to the student. As usual, it is:</p>
+                    <ul>
+                        <li>a student has not booked the next lesson;</li>
+                        <li>a student did not confirm the previous lesson;</li>
+                        <li>a student's package runs out.</li>
+                    </ul>
+                    <p>We added the corresponding statuses next to the student's name. Now the tutor knows when to write to the student so as not to lose them because they bring money. We also added a search where you can find students by name or status.</p>
+                </div>
+                <img src="../img/preply/preply7.png ">
+                <div class="text_block ">
+                    <h3>Quick actions</h3>
+                    <p>We know who the tutor is writing to and why, and now we can help them do it at the right time. Currently, various actions require leaving the messenger because the functionality is scattered across different sections of the site. We
+                        added these actions directly to the messenger and now the system itself offers to perform the desired action at the right time.</p>
+                    <p><b class="bold ">Confirm the lesson.</b> For example, in Preply, a student has to confirm a lesson in order for the tutor to get paid for it. Now the system itself offers to remind them of this. You can attach a button to the message
+                        so that the student confirms the lesson by clicking on it right in the message.</p>
+                    <p><b class="bold ">Book a lesson.</b> When a student doesn't have a lesson booked, we can offer to make it. We choose a date and send it, and the student can confirm or change the date right in the chat. </p>
+                    <p><b class="bold ">Buy a package.</b> If a student runs out of a package, we can offer our packages right in the chat and the student can buy them there.</p>
+                    <p>All these actions are available at any time as well. We don't change the flow of users, but organically integrate at the right time and help them do the right thing faster and in one place.</p>
+                </div>
+                <div class="picture ">
+                    <img src="../img/preply/preply7_5.png ">
+                    <h5>Book a lesson right in the chat</h5>
+                </div>
+                <div class="text_block ">
+                    <h3>Smart responses</h3>
+                    <p>The in-depth interviews confirmed that in typical situations, tutors respond to students with standard answers that they keep in their heads or in a separate file. Technically, these are repeated actions under specific conditions and
+                        with a variable <code>student name</code>. This means that when a tutor writes the same messages to students in specific situations, changing only the name, the system can offer to insert this message with the student's name already
+                        inserted.
+                    </p>
+
+                </div>
+                <img src="../img/preply/preply8.png ">
+                <div class="text_block ">
+                    <h3>All in one place</h3>
+                    <p>We put information that is more useful for tutors in the first place. The calendar is displayed first, as it is most frequently accessed. Additional information about the lessons and the student has been moved to the second place,
+                        as tutors need this information at the beginning of communication.</p>
+                    <p>This way, we maximized the context-dependent usefulness of the right panel. Now everything is really in one place — no need to jump around the site. </p>
+                </div>
+
+                <img src="../img/preply/preply9.png ">
+                <div class="text_block ">
+                    <h3>What's next?</h3>
+                    <p>A product is never finished, it is constantly evolving and changing. We imagined what would happen next if we developed the product in the same direction. </p>
+                    <p>The next step is to reduce the number of sections in the interface by combining duplicate objects and integrating everything around the chat into one screen. <b class="bold ">The messenger is the heart of Preply.</b></p>
+                </div>
+                <img src="../img/preply/preply1.png ">
+                <div class="text_block ">
+                    <h3>What to measure?</h3>
+                    <ul>
+                        <li>GMV per tutor;</li>
+                        <li>LTV of student;</li>
+                        <li>Hours purchased per tutor;</li>
+                        <li>Hours completed per tutor;</li>
+                        <li>Conversion to paid.</li>
+                    </ul>
+                </div>
+                <div class="text_block ">
+                    <h3>Team</h3>
+                    <p>I was involved at all stages, with a special focus on research, analysis, and validation of solutions. Worked in a team with:</p>
+                    <ul style="list-style-type: none; padding-left: 0px; ">
+                        <li><a href="https://www.linkedin.com/in/olesia-kaita-878093193/">Olesia Kaita, </a> Product Designer at Kyivstar;</li>
+                        <li><a href="https://www.linkedin.com/in/oleksandr-kanskyi/">Oleksandr Kansyi,</a> Design Team Lead at Panenco;</li>
+                        <li><a href="https://t.me/muzyychka">Dima Muzychka,</a> Product Designer at Medidata;</li>
+                        <li><a href="https://www.facebook.com/elizabeth.hryshenchuk">Elizabeth Hryshenchuk,</a> Product Manager at Kyivstar;</li>
+                        <li><a href="https://www.facebook.com/alex.glushenko.3">Oleksandr Hlushchenko,</a>Product Designer at airSlate;</li>
+                        <li><a href="https://www.linkedin.com/in/vlad-kyshkan/">Vlad Kyshkan</a>, Product Designer at Preply.</li>
+                    </ul>
+                </div>
+                <div class="highlight ">
+                    <h3>I dream</h3>
+                    <p>of creating valuable products and changing people's everyday lives for the better</p>
+                </div>
+                <div class="links ">
+                    <a href="../ua/Ihor Dudnyk CV.pdf" download>CV</a>
+                    <a href="mailto:dudnik11@gmail.com ">Mail</a>
+                    <a href="https://t.me/dudnik11 ">Telegram</a>
+                    <a href="https://www.linkedin.com/in/igor-dudnyk-302822175/ ">LinkedIn</a>
+                </div>
+            </div>
