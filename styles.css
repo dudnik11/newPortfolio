@@ -36,6 +36,11 @@
         color: #333333;
     }
     
+    .languages {
+        position: fixed;
+        bottom: 40px;
+    }
+    
     .mainBlockMainPage {
         display: flex;
         flex-direction: column;
@@ -312,6 +317,11 @@
             padding: 16px 16px 32px 0px;
         }
         .itemsList {
+            margin-top: 12px;
+        }
+        .languages {
+            position: relative;
+            bottom: 0px;
             margin-top: 12px;
         }
         body {
