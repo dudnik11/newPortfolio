@@ -64,6 +64,7 @@
     
     .content_main {
         padding-top: 40px;
+        padding-bottom: 40px;
         max-width: 700px;
         margin: auto;
         display: flex;
@@ -338,6 +339,7 @@
         }
         .content_main {
             padding-top: 0px;
+            padding-bottom: 0px;
         }
         .content {
             margin: auto;
